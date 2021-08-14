@@ -1,0 +1,13 @@
+/* .vitepress/theme/custom.css */
+:root {
+    --c-brand: pink;
+    --c-brand-light: rgb(255, 125, 147);
+    --c-text:pink;
+    /* --c-text-light:rgb(255, 125, 147); */
+  }
+  #main-title,a{
+      color: pink;
+  }
+  .features{
+      margin: auto;
+  }
