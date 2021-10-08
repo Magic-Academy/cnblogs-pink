@@ -359,6 +359,27 @@ pre:before {
   box-shadow: 1.4em 0 #e9cd06, 2.8em 0 #81d95e;
 }
 /* 首屏动画 */
+#loading {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  transition: opacity 1s;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 999999;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #fff;
+}
 .loading {
   position: relative;
   width: 60px;
