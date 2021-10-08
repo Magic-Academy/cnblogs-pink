@@ -69,7 +69,12 @@ $(document).ready(function () {
     node.appendChild(newNode_js1);
     node.appendChild(newNode_js2);
 });
-
+// 判断是友情链接页面
+if (location.pathname.match(/\/links/) != null ) {
+    $(".postDesc").remove();
+    $("#blog_post_info_block").remove();
+    $("#comment_form").remove();
+}
 
 // 判断是否为随笔和文章详情页面 
 if (location.pathname.match(/\/p/) != null || location.pathname.match(/\/articles/) != null) {
