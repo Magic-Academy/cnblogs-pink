@@ -4,8 +4,8 @@
  * @Author: 松岛川树
  * @Date: 2021-10-08 12:43:14
  * @LastEditors: 松岛川树
- * @LastEditTime: 2021-10-08 14:19:04
- * @FilePath: \blackwhiteTone-Admin\static\a.js
+ * @LastEditTime: 2021-10-21 18:20:07
+ * @FilePath: \cnblogs-pink\assets\js\getLinks.js
  */
 
 
@@ -20,7 +20,9 @@ const getJson = async () => {
   for (let i of jsonList) {
     const str = `
   <div class="item">
-    <div class='avatar'><img src="${i.avatar}"></div>
+    <div class='avatar'><img src="${i.avatar}"
+    onerror="this.src='https://images.cnblogs.com/cnblogs_com/blogs/694881/galleries/2011285/o_211021101608_404.gif'">
+</div>
     <div class='name'>${i.name}</div>
     <div class='introduction'>${i.introduction}<a href='${i.url}' target="view_window">访问</a></div>
   </div>
