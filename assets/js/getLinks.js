@@ -4,7 +4,7 @@
  * @Author: 松岛川树
  * @Date: 2021-10-08 12:43:14
  * @LastEditors: 松岛川树
- * @LastEditTime: 2021-10-21 18:20:07
+ * @LastEditTime: 2021-10-21 18:49:56
  * @FilePath: \cnblogs-pink\assets\js\getLinks.js
  */
 
@@ -24,7 +24,8 @@ const getJson = async () => {
     onerror="this.src='https://images.cnblogs.com/cnblogs_com/blogs/694881/galleries/2011285/o_211021101608_404.gif'">
 </div>
     <div class='name'>${i.name}</div>
-    <div class='introduction'>${i.introduction}<a href='${i.url}' target="view_window">访问</a></div>
+    <div class='introduction'>${i.introduction}</div>
+    <div><a href='${i.url}' target="view_window">访问</a><div>
   </div>
   `;
 
